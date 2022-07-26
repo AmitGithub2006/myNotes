@@ -441,20 +441,20 @@
 // console.log(values);
 
 //23.
-let scores = {
-    ajay : 90,
-    vijay : 70,
-    sanjay : 80,
-    dhananjay : 85,
-}
-let values = Object.entries(scores).sort((a,b) => a[1]-b[1]);
-let sortedObj = {}
-for(let i = 0; i < values.length; i++){
+// let scores = {
+//     ajay : 90,
+//     vijay : 70,
+//     sanjay : 80,
+//     dhananjay : 85,
+// }
+// let values = Object.entries(scores).sort((a,b) => a[1]-b[1]);
+// let sortedObj = {}
+// for(let i = 0; i < values.length; i++){
     // console.log(values[i]);
     // console.log(values[i][0], values[i][1]);
-    sortedObj[values[i][0]] = values[i][1];
-}
-console.log(sortedObj);
+    // sortedObj[values[i][0]] = values[i][1];
+// }
+// console.log(sortedObj);
 
 // 24.
 // let keys = ['name', 'age', 'country'];
