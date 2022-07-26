@@ -115,7 +115,7 @@
 //     console.log(total);
 // }
 // shoppingCart(5,100,150,200,100);
-// Rest operator should be used at last. That's it is called rest operator.
+// Rest operator should be used at last. That's why it is called rest operator.
 
 // (vi)
 // function shoppingCart (discount,coupon,...prices){
