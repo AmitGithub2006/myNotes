@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- What is the DOM?
 The DOM is a W3C (World Wide Web Consortium) standard.
 The DOM defines a standard for accessing documents:
 "The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document." -->
 
-<!-- With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+    <!-- With the object model, JavaScript gets all the power it needs to create dynamic HTML:
 
 JavaScript can change all the HTML elements in the page
 JavaScript can change all the HTML attributes in the page
@@ -22,45 +22,67 @@ JavaScript can add new HTML elements and attributes
 JavaScript can react to all existing HTML events in the page
 JavaScript can create new HTML events in the page -->
 
-<!-- Document Object Model is an API that represents and interacts with HTML or XML documents.
+    <!-- Document Object Model is an API that represents and interacts with HTML or XML documents.
 DOM is basically the representation of the same HTML document but in a different format with the use of objects. -->
 
-<!-- Why called an Object Model?
+    <!-- Why called an Object Model?
 Documents are modeled using objects, and the model includes not only the structure of a document but also the behavior of a document and the objects of which it is composed like tag elements with attributes in HTML. -->
 
-<!-- Methods of Document Object:
+    <!-- Methods of Document Object:
 1.write(“string”): Writes the given string on the document.
 2.getElementById(): returns the element having the given id value.
 3.getElementsByName(): returns all the elements having the given name value.
 4.getElementsByTagName(): returns all the elements having the given tag name.
 5.getElementsByClassName(): returns all the elements having the given class name. -->
 
-<!--  window:- window is nothing but an object(having key-value pairs)
+    <!--  window:- window is nothing but an object(having key-value pairs)
 Everything is present in the window object.
 It is also known as this, global object and globalThis object. -->
 
-<!--  document == window.document
+    <!--  document == window.document
 Every markup language is document.
 A markup language is a computer language that uses tags, keywords or names to define elements within a document.
 Markup languages are not programming languages.
 eg:- HTML, XML, BBC etc.-->
 
-<!-- document.getElementsByTagName('p')
+    <!-- document.getElementsByTagName('p')
 It will return all the paragraphs of the document. -->
 
-<!--  document.getElementsByName('text1')
+    <!--  document.getElementsByName('text1')
 It will return all the name tags.-->
 
-<!--  document.getElementsByClassName('para')
+    <!--  document.getElementsByClassName('para')
 It will return all the elements having class para. -->
 
-<!-- document.getElementById('para')
+    <!-- document.getElementById('para')
 It will return all the elements having id para. -->
 
-<!-- paratags.innerHTML
+    <!-- paratags.innerHTML
 It will return everything present inside para tag.-->
 
-<!-- paratags.innerText
+    <!-- paratags.innerText
 It will return only text present inside para tag.-->
-</body>
+    <li>outside</li>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <h1>hi</h1>
+    </ul>
+    <h1 class="second">hello</h1>
+    <!-- If we want to change first li's element to 10 -->
+
+    <ul>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+    </ul>
+    <a class="anchor-test" href="https://google.com">Google</a>
+    <script src="DOM.js">
+      // document.getElementsByTagName('li')[0].innerText = 10 // If we write this thing at line no.65 then it will throw an error(undefined). And this is the reason why we add script at last.
+    </script>
+    <!-- script tag always placed just above the ending tag of the body because elements are not even defined at the beginning.-->
+  </body>
 </html>
