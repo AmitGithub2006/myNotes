@@ -1,0 +1,34 @@
+.visibility {
+  visibility: hidden;
+}
+
+body {
+  padding: 5rem;
+}
+
+.child {
+  height: 2rem;
+  width: 2rem;
+  background-color: khaki;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent {
+  height: 4rem;
+  width: 4rem;
+  background-color: darkgoldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grandparent {
+  height: 6rem;
+  width: 6rem;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

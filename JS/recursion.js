@@ -18,8 +18,8 @@
 // Using for loop, this problem takes 8(elements)*7(1 element compares with 7 other elements) = 56 steps but using recursion it is taking only 13 steps.
 
 // Every recursion program should start with
-// (i) error condition(may come or not)
-// (ii) base condition
+// (i) base condition
+// (ii) error condition(may come or not)
 // (iii) actual code
 
 // Ques:- Find factorial of a number.

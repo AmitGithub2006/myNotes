@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./DOM.css" />
   </head>
   <body>
     <!-- What is the DOM?
@@ -62,7 +63,7 @@ It will return everything present inside para tag.-->
 
     <!-- paratags.innerText
 It will return only text present inside para tag.-->
-    <li>outside</li>
+    <!-- <li>outside</li>
     <ul>
       <li>1</li>
       <li>2</li>
@@ -70,9 +71,9 @@ It will return only text present inside para tag.-->
       <li>4</li>
       <h1>hi</h1>
     </ul>
-    <h1 class="second">hello</h1>
+    <h1 class="second">hello</h1> -->
     <!-- If we want to change first li's element to 10 -->
-
+    <!-- 
     <ul>
       <li>5</li>
       <li>6</li>
@@ -80,9 +81,24 @@ It will return only text present inside para tag.-->
       <li>8</li>
     </ul>
     <a class="anchor-test" href="https://google.com">Google</a>
-    <script src="DOM.js">
-      // document.getElementsByTagName('li')[0].innerText = 10 // If we write this thing at line no.65 then it will throw an error(undefined). And this is the reason why we add script at last.
-    </script>
+    <a class="anchor" href="https://google1.com" onmouseover="toggle()"
+      >Google1</a
+    >
+    <a class="anchor" href="https://google2.com">Google2</a>
+
+    <button type="button" onclick="toggle()">Click</button> -->
+
+    <!-- document.getElementsByTagName('li')[0].innerText = 10 // If we write this thing at line no.65 then it will throw an error(undefined). And this is the reason why we add script at last. -->
+
     <!-- script tag always placed just above the ending tag of the body because elements are not even defined at the beginning.-->
+    <div class="grandparent">
+      gp
+      <div class="parent">
+        p
+        <div class="child">c</div>
+      </div>
+    </div>
+    <button type="button" class="btn">Remove gp</button>
+    <script src="DOM.js"></script>
   </body>
 </html>
