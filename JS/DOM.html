@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./DOM.css" />
   </head>
   <body>
+    <input name="age" onchange="changing(event)" type="text" />
     <!-- What is the DOM?
 The DOM is a W3C (World Wide Web Consortium) standard.
 The DOM defines a standard for accessing documents:
@@ -99,6 +100,13 @@ It will return only text present inside para tag.-->
       </div>
     </div>
     <button type="button" class="btn">Remove gp</button>
+    <p>
+      Lorem, ipsum dolor sit amet <strong>consectetur</strong> adipisicing elit.
+    </p>
+    <iframe src="https://devdocs.io/" frameborder="0"></iframe>
+    <!-- <iframe src="https://www.w3schools.com/" frameborder="0"></iframe> -->
+    <!-- Here the 2nd link(www.w3schools.com) is not opening because it is prevented to open on any other domain.(it will not allow to load page if someone tries to open somewhere else). This is called as CORS(cross origin resource sharing) -->
+    <p class="para">Amit</p>
     <script src="DOM.js"></script>
   </body>
 </html>

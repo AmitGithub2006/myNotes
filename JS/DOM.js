@@ -166,8 +166,8 @@ grandParent.addEventListener("mouseover", printOnHover);
 // newDiv.style.height = "5rem";
 // newDiv.style.width = "5rem";
 // newDiv.style.backgroundColor = "tomato";
-
 // document.body.append(newDiv);
+// newDiv.remove(); // to remove the element.
 
 // (ii)
 // const para = document.createElement("p");
@@ -175,13 +175,69 @@ grandParent.addEventListener("mouseover", printOnHover);
 // document.body.append(para);
 
 // (iii)
-const newDiv = document.createElement("div");
-newDiv.style.height = "5rem";
-newDiv.style.width = "5rem";
-newDiv.style.backgroundColor = "tomato";
-const para = document.createElement("p");
-para.innerHTML = "amitkumar";
-newDiv.append(para);
-document.body.append(newDiv);
+// const newDiv = document.createElement("div");
+// newDiv.style.height = "5rem";
+// newDiv.style.width = "5rem";
+// newDiv.style.backgroundColor = "tomato";
+// const para = document.createElement("p");
+// para.innerHTML = "amitkumar";
+// newDiv.append(para);
+// document.body.append(newDiv);
 
 // child.append(para);
+
+// let colors = ["red", "green", "blue", "yellow", "orange", "black"];
+// for (let i = 0; i < colors.length; i++) {
+//   let newDiv = document.createElement("div");
+//   newDiv.style.width = "10rem";
+//   newDiv.style.height = "5rem";
+//   newDiv.style.backgroundColor = colors[i];
+//   newDiv.style.marginTop = "10px";
+//   document.body.append(newDiv);
+// }
+// newDiv.remove(); // gives error(newDiv is not defined), as we cannot access variable declared using let outside the curly braces. But if 'let' is replaced with 'var' then black color will be removed.
+
+// If we want to remove any selected color/colors then...
+let colors = ["red", "green", "blue", "yellow", "orange", "black"];
+let newDiv = [];
+for (let i = 0; i < colors.length; i++) {
+  newDiv[i] = document.createElement("div");
+  newDiv[i].style.width = "10rem";
+  newDiv[i].style.height = "5rem";
+  newDiv[i].style.backgroundColor = colors[i];
+  newDiv[i].style.marginTop = "10px";
+  // document.body.append(newDiv[i]);
+  if (colors[i] !== 'orange') {
+    document.body.append(newDiv[i]);
+  }
+}
+// We can also remove elements individually...
+// newDiv[0].remove();
+// newDiv[4].remove();
+
+
+// If we want to write something (create a input in html)
+function changing(event) {
+  console.log(event.target.value);
+}
+
+// To change properties of a element...
+function changing() {
+  parent.style.color = "green";
+  parent.style.fontSize = "2rem";
+  parent.style.fontWeight = "bold";
+}
+
+// Join text written on html with the text of js.
+let para = document.querySelector(".para");
+let text = para.innerText;
+para.innerText = text + " is a good boy";
+
+// Search in browser...
+// grandParent.childElementCount //1
+// grandParent.children
+// child.parentElement
+// child.parentElement.parentElement
+// child.parentElement.parentElement.parentElement.parentElement // null
+// child.parentElement.parentElement.parentElement.childNodes
+// document.getElementsByClassName('parent')[0].childNodes
